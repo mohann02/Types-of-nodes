@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of nodes</title>
+</head>
+
+<body>
+    <h1>Types of nodes</h1>
+    <h2>Nodes</h2>
+
+    <p>All nodes</p>
+    <p id="types"></p>
+
+
+    <script>
+        const nodes = document.body.childNodes;
+        let text = "";
+        for (let i = 0; i < nodes.length; i++) {
+            text += "Nodes:" + nodes[i].nodeName + "<br>";
+            
+        }
+        document.getElementById("types").innerHTML = text;
+        
+    </script>
+   
+
+   
+</body>
+
+</html>
